@@ -10,7 +10,7 @@ export default function Expenses(props) {
       <ExpenseItem
         title = {props.items[0].title}
         amount = {props.items[0].amount}
-        date = {props.items[0].date}
+        date = {props.items[0].date }
       />
 
       <ExpenseItem
