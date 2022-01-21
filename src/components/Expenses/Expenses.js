@@ -5,16 +5,20 @@ import Card from '../UI/Card';
 import ExpenseFilter from '../ExpenseFilter/ExpenseFilter';
 
 export default function Expenses(props) {
+  const [filteredYear, setFilteredYear] = useState('2020');
+
   const filterChangeHandler = selectedYear => {
-    console.log('exp');
-    console.log(selectedYear);
+    setFilteredYear(selectedYear);
   }
 
   return (
     <div>
       <Card className='expenses'>
         <div>
-          <ExpenseFilter onChangeFilter={filterChangeHandler} />
+          <ExpenseFilter 
+            onChangeFilter={filterChangeHandler} 
+            selected={filteredYear}
+          />
         </div>
 
         <ExpenseItem
