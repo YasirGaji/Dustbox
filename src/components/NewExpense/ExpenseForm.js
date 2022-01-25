@@ -50,7 +50,7 @@ export default function ExpenseForm(props) {
   const submitHandler = (e) => {
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate)
     }
 
