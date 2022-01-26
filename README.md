@@ -2,7 +2,7 @@
 
 **Version 1.0.0**
 
-This was built to the complete guide to react component rendering, react state events, List rendering, react conditional statement, and react hooks.
+This was built to grasp the complete guide to react component rendering, react state events, List rendering, react conditional statement, and react hooks.
 
 ---
 # Stack
