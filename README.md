@@ -2,7 +2,14 @@
 
 **Version 1.0.0**
 
-This was built to understand the concepts of [React]() for form validation.
+This was built to understand the concepts of [React]() for 
+  -form validation.
+  -state management.
+  -component composition.
+  -component rendering.
+  -component interaction.
+  -component styling.
+  -Logic for dynamically rendering users list. 
 
 ---
 # Stack
