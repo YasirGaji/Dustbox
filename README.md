@@ -9,7 +9,8 @@ This was built to understand the concepts of [React]() for
   -component rendering.
   -component interaction.
   -component styling.
-  -Logic for dynamically rendering users list. 
+  -Logic for dynamically rendering users list.
+  -Logic for state lifting.
 
 ---
 # Stack
