@@ -8,7 +8,7 @@ function App() {
 
   const addUserHandler = (userName, userAge) => {
     setUsersList((prevUsersList) => {
-      return [...prevUsersList, { name: userName, age: userAge}]
+      return [...prevUsersList, { name: userName, age: userAge, id: Math.random().toString()}]
     });
   }; // this function lifts the state up to the parent component from the addUser component to the App component
 
