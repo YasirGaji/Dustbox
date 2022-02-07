@@ -11,6 +11,7 @@ export default function AddUser(props) {
     console.log(enteredUsername, enteredAge);
     setEnteredAge('');
     setEnteredUsername('');
+    props.onAddUser(enteredUsername, enteredAge);
 
     if(enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
       return;
