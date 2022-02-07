@@ -11,9 +11,6 @@ export default function AddUser(props) {
 
   const addUserHandler = (e) => {
     e.preventDefault();
-    setEnteredAge('');
-    setEnteredUsername('');
-    props.onAddUser(enteredUsername, enteredAge);
 
     if(enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
       setError({
@@ -30,6 +27,10 @@ export default function AddUser(props) {
       });
       return;
     }
+
+    setEnteredAge('');
+    setEnteredUsername('');
+    props.onAddUser(enteredUsername, enteredAge);
   }
 
   const usernameChangeHandler = (e) => {
