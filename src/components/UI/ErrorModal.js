@@ -2,10 +2,11 @@ import React from 'react';
 import style from './ErrorModal.module.css';
 import Card from './Card';
 import Button from './Button';
+import Wrapper from '../Helpers/Wrapper';
 
 function ErrorModal(props) {
   return (
-    <>
+    <Wrapper>
       <div className={style.backdrop} onClick={props.onConfirm} />
       <Card className={style.modal}>
         <header className={style.header}> 
@@ -20,7 +21,7 @@ function ErrorModal(props) {
           <Button onClick={props.onConfirm}>Close</Button>
         </footer>
       </Card>
-    </>
+    </Wrapper>
   );
 }
 

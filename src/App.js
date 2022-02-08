@@ -13,10 +13,10 @@ function App() {
   }; // this function lifts the state up to the parent component from the addUser component to the App component
 
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </div>
+    </>
   );
 }
 
