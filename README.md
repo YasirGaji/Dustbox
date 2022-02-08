@@ -11,6 +11,8 @@ This was built to understand the concepts of [React]() for
   -component styling.
   -Logic for dynamically rendering users list.
   -Logic for state lifting.
+  -React dom portals.
+  -Fragments.
 
 ---
 # Stack
