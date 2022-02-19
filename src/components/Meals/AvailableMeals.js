@@ -35,6 +35,7 @@ export default function AvailableMeals() {
     key={meal.id} 
     name={meal.name}
     description={meal.description}
+    price={meal.price}
   />);
 
   return (
