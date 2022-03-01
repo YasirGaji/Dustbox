@@ -15,7 +15,7 @@ export default function Cart(props) {
   </ul>;
 
   return (
-    <Modal>
+    <Modal onClose={props.onClose} >
       {cartItems}
       <div className={style.total}>
         <span>Total Amount</span>
@@ -23,7 +23,7 @@ export default function Cart(props) {
       </div>
 
       <div className={style.actions}>
-        <button className={style['btn-alt']}>Close</button>
+        <button className={style['btn-alt']} onClick={props.onClose}>Close</button>
         <button className={style.button}>Checkout</button>
       </div>
     </Modal>
