@@ -18,6 +18,7 @@ export default function Cart(props) {
     cartCtx.addItem({...item, amount: 1});
   };
 
+  // simform.com
 
   const cartItems = <ul className={style['cart-items']}>
     {cartCtx.items.map((item) => 
