@@ -25,14 +25,14 @@ export default function CartProvider(props) {
   const addItemToCartHandler = (item) => {
     dispatchCartAction({
       type: 'ADD_ITEM',
-      payload: item,
+      item: item,
     });
   };
 
   const removeItemFromCartHandler = (id) => {
     dispatchCartAction({
       type: 'REMOVE_ITEM',
-      payload: id,
+      id: id,
     });
   };
 

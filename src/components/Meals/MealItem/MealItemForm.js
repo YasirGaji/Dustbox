@@ -41,7 +41,7 @@ export default function MealItemForm(props) {
       />
 
       <button>Add</button>
-      {!amountIsValid && <div className={style.error}>Please enter a valid amount. Range 1 - 5</div>}
+      {!amountIsValid && <p className={style.error}>Please enter a valid amount. Range 1 - 5</p>}
     </form>
   )
 }
