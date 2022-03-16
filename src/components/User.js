@@ -3,6 +3,10 @@ import classes from './User.module.css';
 
 
 class User extends Component {
+  componentWillUnmount() {
+    console.log('User unmounted');
+  }
+
   render() {
     return (
       <div className={classes.user}>
