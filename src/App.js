@@ -16,31 +16,9 @@ function App() {
     setTasks(loadedTasks);
   }
 
-  useHttp({
-    url: 'https://react-http-4a5c5-default-rtdb.firebaseio.com/tasks.json',
-    transformTasks
-  });
-
-  const fetchTasks = async (taskText) => {
-    setIsLoading(true);
-    setError(null);
-    try {
-      const response = await fetch(
-        'https://react-http-4a5c5-default-rtdb.firebaseio.com/tasks.json'
-      );
-
-      if (!response.ok) {
-        throw new Error('Request failed!');
-      }
-
-      const data = await response.json();
-
-      
-    } catch (err) {
-      setError(err.message || 'Something went wrong!');
-    }
-    setIsLoading(false);
-  };
+  const { isLoading, error, sendRequest: fetchTasks } = useHttp({
+    url: 'https://react-http-4a5c5-default-rtdb.firebaseio.com/tasks.json'
+  }, transformTasks);
 
   useEffect(() => {
     fetchTasks();

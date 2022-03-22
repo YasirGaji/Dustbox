@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const useHttp = (requestConfig, applyData) => {
   const [isLoading, setIsLoading] = useState(false);
@@ -27,13 +27,13 @@ const useHttp = (requestConfig, applyData) => {
       setError(err.message || 'Something went wrong!');
     }
     setIsLoading(false);
-
-    return {
-      isLoading,
-      error,
-      sendRequest
-    }
   };
+
+  return {
+    isLoading,
+    error,
+    sendRequest
+  }
 };
 
 export default useHttp;
