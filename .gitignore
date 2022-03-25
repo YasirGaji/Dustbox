@@ -1,0 +1,5 @@
+node_modules
+.history
+.vscode
+.vscode-test
+.vscode-test-data
