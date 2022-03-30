@@ -11,7 +11,7 @@ export default function AvailableMeals() {
   useEffect(() => {
     const fetchMeals = async () => {
       setIsLoading(true);
-      const response = await fetch(`https://react-http-4a5c5-default-rtdb.firebaseio.com/meals`);
+      const response = await fetch(`https://react-http-4a5c5-default-rtdb.firebaseio.com/meals.json`);
 
       if (!response.ok) {
         throw new Error('Something went wrong!');
