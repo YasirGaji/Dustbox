@@ -50,6 +50,14 @@ export default function Checkout(props) {
     if (formIsValid) {
       return;
     }
+
+    props.onConfirm({
+      name: enteredName,
+      street: enteredStreet,
+      city: enteredCity,
+      postalCode: enteredPostalCode,
+      phoneNumber: enteredPhoneNumber,
+    });
   };
 
   const nameControlClasses = `${style.control} ${formInputsValidity.name ? '' : style.invalid}`;
