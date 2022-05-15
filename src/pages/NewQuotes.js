@@ -2,7 +2,7 @@ import React from 'react'
 
 function NewQuotes() {
   return (
-    <div>NewQuotes</div>
+    <h1>NewQuotes</h1>
   )
 }
 
