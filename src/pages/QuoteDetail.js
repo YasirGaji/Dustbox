@@ -66,9 +66,17 @@ function QuoteDetail() {
         </div>
       </Route>
 
+      {/* <Routes>
+        <Route path={`${match.path}/comments`}>
+          <Comments />
+        </Route>
+      </Routes> 
+      --- To be used when react router dom is on v6*/}
+
       <Route path={`${match.path}/comments`}>
         <Comments />
       </Route>
+      
     </>
   )
 }
